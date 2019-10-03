@@ -13,26 +13,24 @@ public class Soution {
     scanner.close();
   }
   
-  /**
-  * Finds the number of long integers with value range 
-  * 1 <= (integer value) < query 
-  * that have fulfill the requirement: 
-  * (integer value) XOR (query) > query.
+    /**
+  * The method finds the number of long integers that fulfill the folloiwng requirements:
+  * (1) <= (integer) < (query) 
+  * (integer) XOR (query) > (query).
   *
-  * The position of the leading '1', in the binary represenation 
-  * of the number that is being checked, is shifted from lower to higher 
-  * bit positions unitl the value of this number is lower than value of the query. 
+  * Provided that the value of the integer is always lower than the value of the query, then   
+  * for the Binary Represenations of the integer and the query, it is always true that:
   *
-  * Thus value of the number that is being check is always lower than the value of query. 
-  * Therefore, for the binary represenations of this number and of the query 
-  * it is always true that:
-  * If for the position of the leading '1' (highest value bit) in the number that
-  * is being checked, there is '0' at the same position in the query, then
-  * all possible combinations of '0s' and '1s' afterwards fulfill 
-  * the requirement of (integer value) XOR (query) > query.
+  * If for the position of highest value bit (the leading '1') in the integer, there is '0' 
+  * at the equivalent position (as counted from right to left) in the query, then  
+  * the leading '1' together with all possible combinations of '0s' and '1s' afterwards,
+  * correspond to integers that fulfill the requirement of (integer) XOR (query) > (query). 
+  *
+  * Thus, for example, if (integer) = (1xxx) and (query) = (10xxx), 
+  * where each individual 'x' could be '0' or '1', then (integer) XOR (query) > (query).
   * 
   * @return A long integer representing the total number of integers that fulfill 
-  *         the above-mentioned requirements.
+  *        the above-mentioned requirements.
   */
   private static long findGreatXOR(long query) {
     long result = 0;
