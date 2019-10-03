@@ -15,7 +15,7 @@ public class Soution {
   
   /**
   * Finds the number of long integers with value range 
-  * 1 <= (integer value) < (query-1) 
+  * 1 <= (integer value) < query 
   * that have fulfill the requirement: 
   * (integer value) XOR (query) > query.
   *
@@ -24,7 +24,8 @@ public class Soution {
   * bit positions unitl the value of this number is lower than value of the query. 
   *
   * Thus value of the number that is being check is always lower than the value of query. 
-  * Therefore, for the binary represenations of this number and of the query it is always true that:
+  * Therefore, for the binary represenations of this number and of the query 
+  * it is always true that:
   * If for the position of the leading '1' in the number, there is '0' 
   * at the same position in the query, all possible combinations of '0s' and '1s' 
   * afterwards fulfill the requirement of (integer value) XOR (query) > query.
