@@ -18,7 +18,7 @@ public class Soution {
   * that have fulfill the requirement: 
   * (integer value) XOR (query) > query.
   *
-  * The position of the leading '1' in the binary represenation 
+  * The position of the leading '1', in the binary represenation 
   * of the number that is being checked, is shifted from lower to higher 
   * bit positions unitl the value of this number is lower than value of the query. 
   *
