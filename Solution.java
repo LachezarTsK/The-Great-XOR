@@ -12,6 +12,7 @@ public class Soution {
     }
     scanner.close();
   }
+  
   /**
   * Finds the number of long integers with value range 
   * 1 <= (integer value) < (query-1) 
