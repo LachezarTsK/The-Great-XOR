@@ -26,9 +26,10 @@ public class Soution {
   * Thus value of the number that is being check is always lower than the value of query. 
   * Therefore, for the binary represenations of this number and of the query 
   * it is always true that:
-  * If for the position of the leading '1' in the number, there is '0' 
-  * at the same position in the query, all possible combinations of '0s' and '1s' 
-  * afterwards fulfill the requirement of (integer value) XOR (query) > query.
+  * If for the position of the leading '1' (highest value bit) in the number that
+  * is being checked, there is '0' at the same position in the query, then
+  * all possible combinations of '0s' and '1s' afterwards fulfill 
+  * the requirement of (integer value) XOR (query) > query.
   * 
   * @return A long integer representing the total number of integers that fulfill 
   *         the above-mentioned requirements.
