@@ -38,7 +38,7 @@ public class Soution {
 
     for (long i = 1; i < query; i <<= 1) {
       if ((i ^ query) > query) {
-        result = result + (long) Math.pow(2, position_firstBit);
+        result += (long) Math.pow(2, position_firstBit);
       }
       position_firstBit++;
     }
